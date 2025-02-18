@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="130d2f97-f57b-410f-a934-efc601e968ad" name="Changes" comment="Replace content with digiflux manual.">
+      <change afterPath="$PROJECT_DIR$/.idea/digiflux-ghdoc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/add_enforcement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/add_federal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/add_support.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/delete_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/delete_user_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/edit_contacts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/edit_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/edit_user_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/enforcement_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/enforcement_admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/enforcement_contact.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/enforcement_contact2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/enforcement_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/pseudo_invetory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/pseudo_invetory_crt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/pseudo_invetory_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_admin/pseudo_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_details_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_overview_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_overview_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp1_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp2_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp3_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp4_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp5_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_applications/application_stp6_ed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/DigiFLUX-Benutzerhandbuch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/collect_delivery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_accept1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_accept2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_accept3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_biogas1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_biogas2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_collect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_delete1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_delete2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_delete3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_delete4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_detail2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_detail_accept_reject.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_detail_delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_detail_restore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_export.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_farmspec1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_farmspec2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_farmspec3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_farmspec4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_import.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_import1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_reject1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_reject2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_reject3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_reporting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_return7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_status.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_storno6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp1a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp1b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp1c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp1c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/delivery_stp8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/person_inventory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_delivery/window_collect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_enforcement_application/application_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_enforcement_delivery/delivery_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_enforcement_navigation/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_enforcement_resources/resources_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_inv/dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_inv/homepage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_inv/homepage_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_inv/homepage_table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/process.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/step9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/transfer01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/transfer02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_invres/transfer03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/inv_dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/language.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/legal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_navigation/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_add_stp0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_add_stp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_add_stp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_add_stp3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_delete1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_edit_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_edit_support1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_edit_support2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_enforcement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_homepage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_permission/permission_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_delivery_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_correction1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_correction2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_correction2b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_correction3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_deliver_apply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_overview_details.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_usage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_yearend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_yearend2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_yearend2b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_ressources/ressources_yearend3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_settings/inv_dropdown copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_settings/settings1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_settings/settings2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_settings/settings_dropdown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images_settings/settings_homepage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/index.adoc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;silvanperego&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/silvanperego/digifluxdoc.git&quot;,
+    &quot;accountId&quot;: &quot;b9a2b1b2-b563-449a-8133-0cc32be5aa1c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2tCiFvF1bteDUEAYfQ8hGiSp08q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/workspace/digiflux/digiflux-ghdoc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\digiflux\digiflux-ghdoc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="130d2f97-f57b-410f-a934-efc601e968ad" name="Changes" comment="" />
+      <created>1739862356217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739862356217</updated>
+      <workItem from="1739862357631" duration="2793000" />
+      <workItem from="1739865188643" duration="693000" />
+      <workItem from="1739865900067" duration="651000" />
+      <workItem from="1739866718880" duration="45000" />
+      <workItem from="1739866766359" duration="2535000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update actions.">
+      <option name="closed" value="true" />
+      <created>1739863192312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739863192312</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update actions 2.">
+      <option name="closed" value="true" />
+      <created>1739863266777</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739863266777</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update actions - next try.">
+      <option name="closed" value="true" />
+      <created>1739863419964</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739863419964</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Replace content with digiflux users manual.">
+      <option name="closed" value="true" />
+      <created>1739864578852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739864578852</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Reinsert title">
+      <option name="closed" value="true" />
+      <created>1739865311076</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739865311076</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Try with old index.adoc">
+      <option name="closed" value="true" />
+      <created>1739865717880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739865717880</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Test case with some more text.">
+      <option name="closed" value="true" />
+      <created>1739867029099</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739867029099</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update actions." />
+    <MESSAGE value="Update actions 2." />
+    <MESSAGE value="Update actions - next try." />
+    <MESSAGE value="Replace content with digiflux users manual." />
+    <MESSAGE value="Reinsert title" />
+    <MESSAGE value="Try with old index.adoc" />
+    <MESSAGE value="Test case with some more text." />
+    <MESSAGE value="Replace content with digiflux manual." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace content with digiflux manual." />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

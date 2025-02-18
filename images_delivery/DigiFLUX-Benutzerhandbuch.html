@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<title>DigiFLUX-Benutzerhandbuch</title>
+<link rel="stylesheet" href="./DigiFLUX-Benutzerhandbuch_files/css">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="./DigiFLUX-Benutzerhandbuch_files/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>DigiFLUX-Benutzerhandbuch</h1>
+<div class="details">
+<span id="revdate">20.08.2024</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Inhaltsverzeichnis</div>
+<ul class="sectlevel1">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_%C3%BCber_digiflux">Über digiFLUX</a>
+<ul class="sectlevel2">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_neuigkeiten">Neuigkeiten</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_support">Support</a></li>
+</ul>
+</li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_benutzerhandbuch_f%C3%BCr_meldepflichtige">Benutzerhandbuch für Meldepflichtige</a>
+<ul class="sectlevel2">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_navigation">Navigation</a>
+<ul class="sectlevel3">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_allgemeines">Allgemeines</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_benutzereinstellungen">Benutzereinstellungen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_hilfe">Hilfe</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_sprachen">Sprachen</a></li>
+</ul>
+</li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_erste_schritte_vorrat_registrieren">Erste Schritte - Vorrat registrieren</a>
+<ul class="sectlevel3">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_schritt_1_prozess_starten">Schritt 1 - Prozess starten</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_schritt_2_betrieb_suchen">Schritt 2 - Betrieb suchen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_schritt_3_betrieb_ausw%C3%A4hlen">Schritt 3 - Betrieb auswählen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_schritt_4_registrierung_abschliessen">Schritt 4 - Registrierung abschliessen</a></li>
+</ul>
+</li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_erste_schritte_vorrat_konfigurieren_und_aktivieren">Erste Schritte - Vorrat konfigurieren und aktivieren</a>
+<ul class="sectlevel3">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_die_hauptaktionen_des_vorrats">Die Hauptaktionen des Vorrats</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_vorratsberechtigungen">Vorratsberechtigungen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_vorratseinstellungen">Vorratseinstellungen</a></li>
+</ul>
+</li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_meldepflicht_lieferungen">Meldepflicht - Lieferungen</a>
+<ul class="sectlevel3">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_liefer%C3%BCbersicht">Lieferübersicht</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferung_erstellen">Lieferung erstellen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferdetails">Lieferdetails</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferungen_ablehnen_und_akzeptieren">Lieferungen ablehnen und akzeptieren</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferungen_l%C3%B6schen">Lieferungen löschen</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferungen_exportieren">Lieferungen exportieren</a></li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_lieferungen_importieren">Lieferungen importieren</a></li>
+</ul>
+</li>
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_betriebsmittel">Betriebsmittel</a>
+<ul class="sectlevel3">
+<li><a href="https://digiflux.apps.okd.svc.elca.ch/digiflux/core/docs/de/userguide.html#_betriebsmitteldetails">Betriebsmitteldetails</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_über_digiflux">Über digiFLUX</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_neuigkeiten">Neuigkeiten</h3>
+<div class="paragraph">
+<p>Neuigkeiten zu digiFLUX sind jederzeit hier abrufbar: <a href="https://digiflux.info/de/" class="bare">https://digiflux.info/de/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_support">Support</h3>
+<div class="paragraph">
+<p>Bei technischen Problemen helfen unsere Beraterinnen und Berater Ihnen gerne weiter.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Telefon</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+41 58 402 25 50</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Mail</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:phyto@blw.admin.ch">phyto@blw.admin.ch</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Für fachliche Fragen kontaktieren Sie das für Sie zuständige Amt.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_benutzerhandbuch_für_meldepflichtige">Benutzerhandbuch für Meldepflichtige</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_navigation">Navigation</h3>
+<div class="sect3">
+<h4 id="_allgemeines">Allgemeines</h4>
+<div class="paragraph">
+<p>In der Kopfzeile der Anwendung stehen die wichtigsten Funktionen jederzeit zur Verfügung.</p>
+</div>
+<div class="paragraph">
+<p>Wenn Sie oben links klicken, kommen Sie zurück zur Startseite, egal wo Sie sich gerade befinden (1).</p>
+</div>
+<div class="paragraph">
+<p>Falls Sie bereits mit digiFLUX gearbeitet haben, ist das Menü mit dem aktuell ausgewählten Betrieb/Vorrat sichtbar. Hier haben Sie Schnellzugriff auf alle wichtigen Funktionen für Ihren Betrieb.</p>
+</div>
+<div class="paragraph">
+<p>Mit dem Männchen können Sie die Benutzereinstellungen aufrufen und sich ausloggen (3).</p>
+</div>
+<div class="paragraph">
+<p>Ebenfalls steht ein Hilfemenü (4) und eine Option, um die Sprache zu ändern, zur Verfügung (5).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/header.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_benutzereinstellungen">Benutzereinstellungen</h4>
+<div class="paragraph">
+<p>In den Benutzereinstellungen können sich aus digiFLUX ausloggen (1).</p>
+</div>
+<div class="paragraph">
+<p>Ebenfalls können Sie festlegen wie oft über neue/offene Benachrichtigt werden, sofort, einmal täglich oder einmal wöchentlich als Zusammenfassung (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/user.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hilfe">Hilfe</h4>
+<div class="paragraph">
+<p>In den Hilfeeinstellungen sehen Sie alle Kontaktmöglichkeiten, falls Sie Fragen oder Probleme haben (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/help.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sprachen">Sprachen</h4>
+<div class="paragraph">
+<p>Möchten Sie die Sprache ändern, können Sie dies im Sprachmenü tun (5).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/language.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_erste_schritte_vorrat_registrieren">Erste Schritte - Vorrat registrieren</h3>
+<div class="sect3">
+<h4 id="_schritt_1_prozess_starten">Schritt 1 - Prozess starten</h4>
+<div class="paragraph">
+<p>Um mit digiFLUX arbeiten zu können, benötigen Sie mindestens einen Vorrat, welcher Ihnen ermöglicht, mit Betriebsmitteln, z.B. Pflanzenschutzmitteln, zu arbeiten. Dieser bildet Ihren Betrieb inklusive Lager virtuell ab.</p>
+</div>
+<div class="paragraph">
+<p>Wenn Sie sich zum ersten Mal in digiFLUX einloggen, landen Sie auf der Willkommensseite, welche Ihnen einen Überblick über digiFLUX gibt.
+Klicken Sie auf "Jetzt beginnen" (1), um Ihren ersten Vorrat zu beantragen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schritt_2_betrieb_suchen">Schritt 2 - Betrieb suchen</h4>
+<div class="paragraph">
+<p>Als Nächstes müssen Sie den Betrieb, den Sie als Vorrat registrieren möchten, suchen.</p>
+</div>
+<div class="paragraph">
+<p>Geben Sie hierfür einen der folgenden Werte in das Suchfeld (1) für den Betrieb ein, den Sie als Vorrat registrieren möchten:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Firmenname</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name Ihres Betriebes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>BUR-Nr.</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer Ihres Betriebes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>UID</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nummer Ihres Unternehmens</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Anschliessend starten Sie die Suche mit dem Knopf "Suchen" (2). Die Liste mit passenden Ergebnissen wird angezeigt.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Es ist ebenfalls möglich, mehrere Vorräte gleichzeitig zu registrieren, indem man mit Firmenname oder UID sucht und anschliessend aus der Ergebnisliste mehrere Betriebe auswählt.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schritt_3_betrieb_auswählen">Schritt 3 - Betrieb auswählen</h4>
+<div class="paragraph">
+<p>Wählen Sie Ihren Betrieb oder Ihre Betriebe aus der Suchresultatliste aus (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step3.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Dann klicken Sie am Ende der Liste auf "Vorräte für ausgewählte Standorte" (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step4.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Bestätigen Sie die erscheinende Meldung mit "OK" (3).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Sie können auch abbrechen und Ihre Auswahl ändern.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step5.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Klicken Sie auf "Zu meinen Vorräten" (4). Sie gelangen zur Liste Ihrer Vorräte, wo Sie bereits registrierte sowie Vorräte sehen können, bei welchen die Registrierung noch nicht abgeschlossen ist.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step6.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schritt_4_registrierung_abschliessen">Schritt 4 - Registrierung abschliessen</h4>
+<div class="paragraph">
+<p>Navigieren Sie zur Liste der Vorräte unter dem Tab "Startseite" (1).</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie für den Vorrat, für den Sie die Registrierung abschliessen wollen, auf "Code eingeben" (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step7.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Sie gelangen zur Seite "Vorrat-Anmeldung abschliessen".</p>
+</div>
+<div class="paragraph">
+<p>Geben Sie hier im vorgegebenen Textfeld den Code ein, den Sie per Post erhalten haben (3).</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend wählen Sie die für Sie zutreffende Rolle aus (4).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step8.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Als Nächstes geben Sie den Wohnkanton der verantwortlichen Person ein (5).</p>
+</div>
+<div class="paragraph">
+<p>Danach legen Sie fest, in welcher Einheit Sie Ihre Flächen angezeigt haben wollen (6).</p>
+</div>
+<div class="paragraph">
+<p>Zuletzt geben Sie an, ob Sie Daten aus Kantonssystemen importieren möchten (7).</p>
+</div>
+<div class="paragraph">
+<p>Dann bestätigen Sie Ihre Eingaben (8).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/step9.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_erste_schritte_vorrat_konfigurieren_und_aktivieren">Erste Schritte - Vorrat konfigurieren und aktivieren</h3>
+<div class="sect3">
+<h4 id="_die_hauptaktionen_des_vorrats">Die Hauptaktionen des Vorrats</h4>
+<div class="sect4">
+<h5 id="_startseite">Startseite</h5>
+<div class="paragraph">
+<p>Auf der Startseite haben Sie Zugriff auf alle Hauptfunktionen, um Ihren Vorrat zu verwalten. Um alle Aktionen für einen bestimmten Vorrat ausführen zu können, müssen Sie Inhaber oder stellvertretender Inhaber von diesem Vorrat sein.</p>
+</div>
+<div class="paragraph">
+<p>Folgende Aktionen sind auf der Startseite verfügbar:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Den Vorrat zur Liste der Favoriten hinzufügen (1). Dies ermöglicht Ihnen den schnellen Zugriff auf diesen Vorrat in der gesamten Anwendung.</p>
+</li>
+<li>
+<p>Die Vorratsberechtigungen aufrufen (2). Diese dienen dazu, zu verwalten, wer alles Zugriff auf Ihren Vorrat hat.</p>
+</li>
+<li>
+<p>Die Vorratseinstellungen aufrufen (4). Hier lassen sich allgemeine Einstellungen für den Vorrat vornehmen.</p>
+</li>
+<li>
+<p>Den Vorrat als aktiven Vorrat auswählen (5). Hiermit wählen Sie diesen Vorrat als Arbeitsvorrat aus und können Lieferung und Anwendungen für diesen Vorrat erstellen sowie Flächen erfassen und Lagerbestände einsehen.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Die Vorratsberechtigungen und die Vorratseinstellungen stehen nur dem Inhaber und dem stellvertretenden Inhaber zur Verfügung.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/homepage.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Welcher Vorrat gerade aktiv ist, ist sichtbar durch die Hervorhebung in der Liste der Vorräte (5) sowie in der Kopfzeile der Anwendung (6).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/homepage_2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_schnellzugriff">Schnellzugriff</h5>
+<div class="paragraph">
+<p>Einige der auf der Startseite verfügbaren Aktionen sind ebenfalls in der gesamten Anwendung über das Menü in der Kopfzeile verfügbar:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Vorratseinstellungen aufrufen (1).</p>
+</li>
+<li>
+<p>Die Vorratsberechtigungen aufrufen (2).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ebenfalls verfügbar sind:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Die Liste der Vorräte anzeigen (Startseite) (3).</p>
+</li>
+<li>
+<p>Liste der Favoriten (4). Alle Vorräte, die auf der Startseite als Favoriten markiert wurden, werden hier aufgelistet und können hier ausgewählt werden.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/dropdown.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vorratsberechtigungen">Vorratsberechtigungen</h4>
+<div id="Vorratsberechtigungen" class="paragraph">
+<p>Die Vorratsberechtigungen legen fest, wer alles Zugriff auf einen Vorrat hat und geben eine Übersicht über die bereits vergebenen Berechtigungen.</p>
+</div>
+<div class="paragraph">
+<p>Sie können über die Startseite aufgerufen werden (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_homepage.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ebenfalls können die Vorratsberechtigungen über das Menü in der Kopfzeile aufgerufen werden (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_dropdown.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Nach dem Klicken auf eine der Optionen gelangen Sie zu dieser Seite:</p>
+</div>
+<div class="paragraph">
+<p>In der Tabelle "Mein Team" sehen Sie alle Benutzer, die aktuell Zugriff auf Ihren Vorrat haben und mit diesem arbeiten können.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_user.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>In der Tabelle "Vollzug" sind alle Benutzer gelistet, welche Daten einsehen müssen, um die Erfüllung der Meldepflicht zu kontrollieren, sowie auch der Support mit seinen Berechtigungseinstellungen (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_enforcement.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="sect4">
+<h5 id="_benutzer_zum_vorrat_hinzufügen">Benutzer zum Vorrat hinzufügen</h5>
+<div class="paragraph">
+<p>Um neue Benutzer hinzuzufügen, klicken Sie auf "Person hinzufügen" auf der Seite der Vorratsberechtigungen (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_add_stp0.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Nun können Sie mithilfe der Agate-Nummer den Benutzer auswählen, den Sie Ihrem Vorrat hinzufügen möchten.</p>
+</div>
+<div class="paragraph">
+<p>Geben Sie hierfür die Agate-Nummer des Benutzers im Textfeld (2) ein.</p>
+</div>
+<div class="paragraph">
+<p>Wird der Benutzer gefunden, wird dessen Vor- und Nachname unter dem Textfeld angezeigt.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Nur Benutzer, die ein Agate-Konto haben und deren Agate-Nummer Ihnen bekannt ist, können hinzugefügt werden. Falls die gewünschte Person noch nicht über ein Agate-Konto verfügt, kann dieses hier beantragt werden: agate.ch.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Nachdem Sie den Benutzer ausgewählt haben, können Sie das Berechtigungsprofil auswählen, das Sie vergeben möchten (3).</p>
+</div>
+<div class="paragraph">
+<p>Folgende Berechtigungsprofile sind verfügbar:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Berechtigungsprofil</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Inhaber</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Inhaber» sind Personen, die den Vorrat erstellt haben und für sämtliche Lieferungen und Anwendungen im Vorrat verantwortlich sind. Diese Personen können erfassen, bearbeiten sowie Berechtigungen erteilen. Diese Berechtigung kann nicht entzogen werden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Stv. Inhaber</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Stv. Inhaber» sind Personen, die dieselben Berechtigungen wie der Inhaber haben, aber nicht für den Vorrat verantwortlich sind.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Produkte verwalten und anwenden</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Produkte verwalten und anwenden” ist für Personen gedacht, die Lieferungen und Anwendungen erfassen und bearbeiten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Produkte anwenden</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Produkte anwenden” ist für Personen gedacht, die Anwendungen von Produkten erfassen und bearbeiten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Produkte verwalten</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Produkte verwalten” ist für Personen gedacht, die Lieferungen von Produkten erfassen, bearbeiten, akzeptieren oder ablehnen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Lesen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Lesen” ist für Personen gedacht, die alle Lieferungen, Anwendungen und Übersichten im Vorrat lesen können.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kein Zugriff</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Kein Zugriff” ist für Personen gedacht, die temporär keinen Zugang mehr zum Vorrat haben sollen.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Haben Sie das passende Berechtigungsprofil ausgewählt, können Sie den Benutzer mit "Hinzufügen" zu Ihrem Vorrat hinzufügen (4).</p>
+</div>
+<div class="paragraph">
+<p>Der Benutzer wird dann in der Tabelle "Team" angezeigt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_add_stp2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_berechtigungen_ändern">Berechtigungen ändern</h5>
+<div class="sect5">
+<h6 id="_benutzer">Benutzer</h6>
+<div class="paragraph">
+<p>Wenn Sie die Berechtigungen für einen bereits hinzugefügten Benutzer anpassen möchten, klicken Sie auf den Stift neben dem entsprechenden Benutzer in der "Mein Team"-Tabelle auf der Seite der Vorratsberechtigungen (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_edit_1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ändern Sie das Berechtigungsprofil anschliessend (2).</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie dann auf "Fertig" (3), um die Änderungen zu übernehmen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_edit.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_support_2">Support</h6>
+<div class="paragraph">
+<p>Sie können ebenfalls die Berechtigungen des Supports ändern. Klicken Sie hierfür in der Tabelle "Vollzug" auf den Stift in der Zeile "Supporter" (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_edit_support1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Anschliessend können Sie das Berechtigungsprofil für den Support ändern (2):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Berechtigungsprofil</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Nur Lesen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Berechtigung ermöglicht es, alle Lieferungen, Anwendungen und Übersichten im Vorrat zu lesen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Bearbeiten</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Berechtigung ermöglicht es, Lieferungen und Anwendungen im Vorrat zu erfassen und zu bearbeiten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kein Zugriff</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Berechtigung ermöglicht es, temporär die Berechtigungen zu entziehen.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Klicken Sie dann auf "Fertig", um Ihre Auswahl zu bestätigen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_edit_support2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_benutzer_vom_vorrat_löschen">Benutzer vom Vorrat löschen</h5>
+<div class="paragraph">
+<p>Wenn Sie die Berechtigungen für einen bereits hinzugefügten Benutzer anpassen möchten, klicken Sie auf den Abfalleimer neben dem entsprechenden Benutzer in der "Mein Team"-Tabelle auf der Seite der Vorratsberechtigungen (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_delete1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Anschliessend bestätigen Sie dies mit "Entfernen" (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/permission_delete.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Der Benutzer wird nun nicht mehr in der "Mein Team"-Tabelle angezeigt.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_vorratseinstellungen">Vorratseinstellungen</h4>
+<div class="paragraph">
+<p>Die Vorratseinstellungen können ebenfalls von verschiedenen Stellen aus aufgerufen werden.</p>
+</div>
+<div class="paragraph">
+<p>Auf der Homepage (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/settings_homepage.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Im Menü in der Kopfzeile (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/settings_dropdown.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>In den Vorratseinstellungen können Sie die bei der Vorratsregistrierung festgelegte organisatorische Rolle nachträglich anpassen (1).</p>
+</div>
+<div class="paragraph">
+<p>Ebenfalls können Sie den Kanton der verantwortlichen Person hier ändern (2).</p>
+</div>
+<div class="paragraph">
+<p>Des Weiteren können Sie das bevorzugte Flächenmass hier anpassen (3).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/settings1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ausserdem lassen sich die Importeinstellungen für die Daten aus dem kantonalen Agrarinformationssystem anpassen (4).</p>
+</div>
+<div class="paragraph">
+<p>Pro Vorrat und Produktfamilie können Einstellungen vorgenommen werden, in welchem Rhythmus Lieferungen akzeptiert werden (5).</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Einstellung</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Automatisch akzeptieren</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lieferungen an diesen Vorrat für die entsprechende Produktfamilie werden automatisch akzeptiert.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Automatisch nach 15 Tagen akzeptieren</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lieferungen an diesen Vorrat für die entsprechende Produktfamilie werden automatisch nach 15 Tagen akzeptiert.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Manuell akzeptieren</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lieferungen an diesen Vorrat für die entsprechende Produktfamilie müssen manuell durch einen berechtigten Benutzer akzeptiert werden.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Wenn Sie alle Einstellungen Ihren Vorstellungen entsprechend vorgenommen haben, können Sie dies mit "Speichern" übernehmen.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_meldepflicht_lieferungen">Meldepflicht - Lieferungen</h3>
+<div class="sect3">
+<h4 id="_lieferübersicht">Lieferübersicht</h4>
+<div class="paragraph">
+<p>Die Lieferübersicht kann über den Tab "Lieferungen" aufgerufen werden.</p>
+</div>
+<div class="paragraph">
+<p>Sie zeigt alle Lieferungen, welche an den aktiven Vorrat gesendet wurden sowie alle ausgehenden Lieferungen. Alle relevanten Aktionen für die Lieferungen sind hier verfügbar.</p>
+</div>
+<div class="paragraph">
+<p>Folgende Aktionen sind hier zugänglich:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Lieferung erfassen - Eine neue Lieferung erfassen (1)</p>
+</li>
+<li>
+<p>Liste importieren - Lieferungen aus einer Excel-Datei importieren (2)</p>
+</li>
+<li>
+<p>Liste exportieren - Lieferungen als Excel exportieren (3)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Mit den Filtern können Sie in der Liste der offenen Lieferungen (10) sowie in der Liste mit den empfangenen und versendeten Lieferungen (11) gleichzeitig suchen. Diese Tabellen werden weiter unten genauer erklärt.</p>
+</div>
+<div class="paragraph">
+<p>Hierbei stehen diese Filter zur Verfügung:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Produkt suchen - Suche nach Produktnamen (4)</p>
+</li>
+<li>
+<p>Liefer-Nr. suchen - Suche nach der in digiFLUX erstellten Liefer-Nr. (5)</p>
+</li>
+<li>
+<p>Alle Stati - Suchen nach Lieferstatus (6)</p>
+</li>
+<li>
+<p>Zeitraum eingrenzen - Zeitraum festlegen, für den die Lieferungen angezeigt werden sollen (7)</p>
+</li>
+<li>
+<p>Produktfamilie - Auswahl der Produktfamilien, für die die Lieferungen angezeigt werden können (8)</p>
+</li>
+<li>
+<p>Zurücksetzen und Suchen - Zurücksetzen setzt alle Eingaben zurück, Suchen startet die Suche (9)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Alle offenen Lieferungen können in der Tabelle "Offen" (10) eingesehen werden. Dort sind alle Lieferungen ersichtlich, die auf eine Validierung (ablehnen oder akzeptieren) warten.</p>
+</div>
+<div class="paragraph">
+<p>Um alle eingegangenen Lieferungen anzuzeigen, müssen Sie auf die Registerkarte "Eingegangen" (11) klicken. Dann werden alle eingegangenen und von Ihnen akzeptierten Lieferungen angezeigt.</p>
+</div>
+<div class="paragraph">
+<p>Die versendeten Lieferungen können mit einem Klick auf die Registerkarte "Versendet" (12) angezeigt werden.</p>
+</div>
+<div class="paragraph">
+<p>Eingegangene und versendete Lieferungen werden beide in der gleichen Tabelle angezeigt (14).</p>
+</div>
+<div class="paragraph">
+<p>Gelöschte Elemente können angezeigt werden, indem ein Häkchen bei "Gelöschte Elemente anzeigen" (13) gesetzt wird.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_overview.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferung_erstellen">Lieferung erstellen</h4>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Nach der ersten Frist des Jahresabschlusses (üblicherweise dem 31. Januar), können Sie keine neuen Lieferungen für das Vorjahr erstellen.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Mit dem Knopf "Lieferung erfassen" (1) gelangen Sie zum ersten Schritt des Lieferprozesses.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp1a.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="sect4">
+<h5 id="_schritt_1_empfänger_und_absender_auswählen">Schritt 1: Empfänger und Absender auswählen</h5>
+<div class="sect5">
+<h6 id="_lieferung_vom_eigenen_aktiven_vorrat_an_einen_anderen_firmenvorrat">Lieferung vom eigenen aktiven Vorrat an einen anderen Firmenvorrat</h6>
+<div class="paragraph">
+<p>Um eine Lieferung an einen anderen digiFLUX-Unternehmensvorrat zu erstellen, klicken Sie auf den Knopf "Betrieb" (1).</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend werden die Filter zur Suche nach Unternehmen angezeigt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vorratsname - Ermöglicht die Suche nach dem Unternehmensnamen (2).</p>
+</li>
+<li>
+<p>PLZ oder Ort - Ermöglicht die Suche nach der Postleitzahl oder dem Ortsnamen</p>
+</li>
+<li>
+<p>BUR-Nr - Ermöglicht es nach der BUR-Nummer zu suchen (4).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sie können die Suche zurücksetzen, falls Sie neue Eingaben tätigen möchten (5).</p>
+</div>
+<div class="paragraph">
+<p>Möchten Sie die Suche starten, klicken Sie auf "Suchen" (6).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Die Suchresultate werden angezeigt (7), wählen Sie das passende Suchresultat aus.</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie danach auf "Weiter" (8).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp3.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_lieferung_vom_eigenen_aktiven_vorrat_an_eine_person">Lieferung vom eigenen aktiven Vorrat an eine Person</h6>
+<div class="paragraph">
+<p>Sie können ebenfalls Lieferungen an Personen, die bereits in digiFLUX registriert sind oder auch an Personen ohne digiFLUX-Zugang senden. DigiFLUX verwendet hierfür sogenannte Personenvorräte, um Lieferungen Personen zuzuordnen.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Lieferungen an Personen werden erfasst, wenn eine Lieferung erstellt werden soll, aber die Person, die die Lieferung empfangen soll, keinem Unternehmen zugeordnet werden kann.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Um an Personen zu liefern, klicken Sie auf "Personen" (1).</p>
+</div>
+<div class="paragraph">
+<p>Hat die Person, die die Lieferung empfangen soll, bereits ein Agate-Konto und Sie kennen deren Agate-Nummer, können Sie diese direkt eingeben (2).</p>
+</div>
+<div class="paragraph">
+<p>Wird das Konto gefunden, wird der Vor- und Nachname der Person angezeigt (3).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp1c1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Falls Ihnen das Agate-Konto nicht bekannt ist, können Sie die Adressdaten der Person eingeben.</p>
+</div>
+<div class="paragraph">
+<p>Geben Sie den Vornamen (1) und den Nachnamen (2) der Person ein.</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend geben Sie die Postleitzahl (3) und den Ort (4) sowie den Kanton ein (5).</p>
+</div>
+<div class="paragraph">
+<p>Als Nächstes geben Sie die E-Mail-Adresse ein (6).</p>
+</div>
+<div class="paragraph">
+<p>Geben Sie danach das Geburtsdatum ein (7).</p>
+</div>
+<div class="paragraph">
+<p>Zuletzt geben Sie die Telefonnummer ein (8).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp1c2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_speziallieferung_vom_eigenen_aktiven_vorrat">Speziallieferung vom eigenen aktiven Vorrat</h6>
+<div class="paragraph">
+<p>Es gibt weitere Formen von Lieferungen, die spezielle Ereignisse wie Verlust oder Entsorgung betreffen. Weitere Spezialfälle sind Lieferungen an Firmen und Personen im Ausland.</p>
+</div>
+<div class="paragraph">
+<p>Standardmässig sind folgende Spezialfälle in digiFLUX verfügbar:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Richtung</th>
+<th class="tableblock halign-left valign-top">Mit Adresse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privatanwender</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Privatpersonen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausgehend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entsorgung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entsorgung von Mitteln</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausgehend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verlust</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verlust von Mitteln</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausgehend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausland (Ausfuhr)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export von Mitteln</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausgehend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ausland (Einfuhr)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Import von Mitteln</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eingehend</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ja</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sonstige</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weitere Ereignisse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nein</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Diese können je nach Fall für zu sendende oder zu empfangende Lieferungen oder für beides verwendet werden.</p>
+</div>
+<div class="paragraph">
+<p>Um Speziallieferungen ausgehend von Ihrem Vorrat zu erstellen, klicken Sie auf "Andere" (1).</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend wählen Sie den gewünschten Fall aus der Liste aus (nur Fälle, die ausgehende Lieferungen zulassen, werden angezeigt) (2).</p>
+</div>
+<div class="paragraph">
+<p>Bei einigen Fällen sind Adress- und Kontaktdaten Pflicht, wie auf dem Bild für den Fall "Ausland (Ausfuhr)" gezeigt.</p>
+</div>
+<div class="paragraph">
+<p>Füllen Sie für diese Fälle die entsprechenden Felder aus (3-10).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Der Absender ist automatisch Ihr aktuell ausgewählter Vorrat.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp1d.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_speziallieferung_an_eigenen_aktiven_vorrat">Speziallieferung an eigenen aktiven Vorrat</h6>
+<div class="paragraph">
+<p>Die oben genannten Spezialfälle können teilweise auch als Absender verwendet werden.</p>
+</div>
+<div class="paragraph">
+<p>Hierfür klicken Sie im Abschnitt Abgeber auf "Andere" (1).</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend wählen Sie den gewünschten Fall aus der Liste aus (nur Fälle, die eingehende Lieferungen zulassen, werden angezeigt) (2).</p>
+</div>
+<div class="paragraph">
+<p>Bei Fällen, die Adress- und Kontaktdaten erfordern, füllen Sie die entsprechenden Felder aus (3-10).</p>
+</div>
+<div class="paragraph">
+<p>Mit "Weiter" gelangen Sie zum nächsten Schritt (11).</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Der Empfänger ist automatisch Ihr aktuell ausgewählter Vorrat.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp1b.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_schritt_2_produkt_auswählen">Schritt 2: Produkt auswählen</h5>
+<div class="paragraph">
+<p>Nachdem Sie sich für einen Absender oder Empfänger entschieden und im vorherigen Schritt auf "Weiter" geklickt haben, können Sie mit der Produktauswahl fortfahren.</p>
+</div>
+<div class="paragraph">
+<p>Um das Produkt zu finden, welches Sie liefern möchten, stehen folgende Filter zur Verfügung:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Produktfamilie: Ermöglicht die Auswahl der Produktfamilie, um nur entsprechende Produkte angezeigt zu bekommen (1).</p>
+</li>
+<li>
+<p>Produktbezeichnung: Suche nach Produktname (2).</p>
+</li>
+<li>
+<p>Inhaltsstoff: Suche nach Inhaltsstoff (3).</p>
+</li>
+<li>
+<p>Zulassungsnummer: Suche nach Zulassungsnummer des Produkts (4).</p>
+</li>
+<li>
+<p>Bewilligungsinhaber: Suche nach Bewilligungsinhaber (5).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Möchten Sie alle Ihre Eingaben zurücksetzen, können Sie den Knopf "Zurücksetzen" (6) verwenden.</p>
+</div>
+<div class="paragraph">
+<p>Um die Suche nach Produkten zu starten, können Sie auf "Suchen" klicken (7).</p>
+</div>
+<div class="paragraph">
+<p>Anschliessend werden die Suchresultate angezeigt (8), klicken Sie auf das passende Produkt.</p>
+</div>
+<div class="paragraph">
+<p>Der Abschnitt mit der Liefermenge erscheint, geben Sie dort die gewünschte Menge ein (9), die Einheit ist bereits vorgegeben.</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie auf "Weiter", um zum nächsten Schritt zu gelangen (10).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp4.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Lieferungen können auch mit negativer Menge erstellt werden, um vom Empfänger Produkte zu fordern.
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_schritt_3_informationen_zur_lieferung_erfassen">Schritt 3: Informationen zur Lieferung erfassen</h5>
+<div class="paragraph">
+<p>In diesem Schritt erfassen Sie die Lieferinformationen.</p>
+</div>
+<div class="paragraph">
+<p>Falls Sie die Liefernummer aus Ihrem System auch in digiFLUX erfassen wollen, können Sie dies im entsprechenden Feld machen (1).</p>
+</div>
+<div class="paragraph">
+<p>Ausserdem können Sie einen Kommentar zur Lieferung schreiben (2).</p>
+</div>
+<div class="paragraph">
+<p>Mit "Weiter" gelangen Sie zum nächsten Schritt (3).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp5.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_schritt_4_zusammenfassung_und_abschluss_der_lieferung">Schritt 4: Zusammenfassung und Abschluss der Lieferung</h5>
+<div class="paragraph">
+<p>In der Zusammenfassung sehen Sie alle Ihre getätigten Eingaben für die Lieferung.</p>
+</div>
+<div class="paragraph">
+<p>Falls Sie Ihre Eingaben ändern möchten, klicken Sie auf "Zurück", um zum vorherigen Schritt zu gelangen. Wiederholen Sie dies, bis Sie bei den Schritten sind, die Sie anpassen möchten.</p>
+</div>
+<div class="paragraph">
+<p>Möchten Sie die Lieferung abschliessen, klicken Sie auf "Abschliessen" (2).</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_erstellte_lieferung_in_der_liste_anzeigen_ohne_lieferungen_an_personen">Erstellte Lieferung in der Liste anzeigen (ohne Lieferungen an Personen)</h5>
+<div class="paragraph">
+<p>Nach dem Abschliessen der Lieferung sieht der Sender nun die Lieferung in seinem Vorrat auf der Lieferübersicht in der Registerkarte "Versendet" (1) in der unteren Tabelle (2).</p>
+</div>
+<div class="paragraph">
+<p>Die Lieferung hat den Status "erfasst", was dem Absender ermöglicht, diese zu löschen, bevor der Empfänger diese akzeptiert.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp7.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Dem Empfänger wird die Lieferung (2) bei den offenen Lieferungen angezeigt (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_stp8.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_erstellte_lieferung_an_eine_person_in_der_liste_anzeigen">Erstellte Lieferung an eine Person in der Liste anzeigen</h5>
+<div class="paragraph">
+<p>Der Prozess, wie Lieferungen an Personen eingesehen werden können, unterscheidet sich ein wenig von dem oben beschriebenen.</p>
+</div>
+<div class="paragraph">
+<p>Beim Absender wird die Lieferung genauso wie oben beschrieben angezeigt.</p>
+</div>
+<div class="paragraph">
+<p>Konnte die Lieferung einem bereits existierenden persönlichen Vorrat zugeordnet werden erscheint diese direkt im entsprechenden Vorrat.</p>
+</div>
+<div class="paragraph">
+<p>Hierfür muss auf der Startseite ein Vorrat, der als "Personenvorrat" (1) betitelt und mit "Persönlich" (2) hervorgehoben ist, existieren.</p>
+</div>
+<div class="paragraph">
+<p>Ist dies der Fall, kann der Empfänger diesen auf der Startseite auswählen und dann die Lieferübersicht öffnen, wo die Lieferung sichtbar sein sollte.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/person_inventory.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Konnte die Lieferung keinem Personenvorrat zugeordnet werden, erhält der Empfänger eine E-Mail.</p>
+</div>
+<div class="paragraph">
+<p>Diese beinhaltet einen Code (1), welcher kopiert werden muss.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/collect_delivery.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Auf der Startseite in digiFlUX  muss dann anschliessend auf "Lieferung abholen geklickt werden" (2)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_collect.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ein Fenster öffnet sich, dort muss dann der Code eingegeben werden (3),
+mit "Lieferung abholen" (4) kann dann die Lieferung abgeholt werden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wenn bereits ein  Personenvorrat existiert, wird die abgeholte Lieferung diesem zugeordnet.</p>
+</li>
+<li>
+<p>Wenn kein Personenvorrat existiert, wird dieser erstellt und diesem die Lieferung zugeordnet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Wie weiter oben beschrieben, kann die Lieferung dann auf diesem Personenvorrat eingesehen werden.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/window_collect.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferdetails">Lieferdetails</h4>
+<div class="paragraph">
+<p>Zu allen Lieferungen können auf der Lieferübersicht Details eingesehen werden.</p>
+</div>
+<div class="paragraph">
+<p>Klicken hierfür bei einer beliebigen Lieferung auf das "i" neben der Lieferung (1).
+image::images_delivery/delivery_detail2.png[Alt-Text, width=1300, height=1100]</p>
+</div>
+<div class="paragraph">
+<p>Dies öffnet die Detailansicht.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_detail.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferungen_ablehnen_und_akzeptieren">Lieferungen ablehnen und akzeptieren</h4>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Nach der zweiten Frist des Jahresabschlusses (üblicherweise dem 15. Februar), können Sie keine Änderungen mehr an Lieferungen  für das Vorjahr vornehmen (ablehnen und akzeptieren)
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect4">
+<h5 id="_ablehnen">Ablehnen</h5>
+<div class="paragraph">
+<p>Falls der Empfänger der Lieferung nicht mit dieser einverstanden ist, kann er diese ablehnen.
+Lieferungen,  welche noch offen sind, das heisst noch nicht auf deren Richtigkeit überprüft wurden befinden sich in der Tabelle der offenen Lieferungen.(1)
+Diese können dort mit dem entsprechenden Knopf neben der Lieferung abgelehnt werden (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_reject1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Dies öffnet ein Fenster wo Sie optional den Ablehnungsgrund eingeben können (3).</p>
+</div>
+<div class="paragraph">
+<p>Mit "Ablehnen" lehnen Sie die Lieferung definitiv ab (4).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_reject2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Abgelehnte Lieferungen werden von der Tabelle der offenen Lieferungen zu den eingegangenen Lieferungen verschoben (1) und erhalten den Status "abgelehnt" (2)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_reject3.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_akzeptieren">Akzeptieren</h5>
+<div class="paragraph">
+<p>Offene Lieferungen können ebenfalls in der Tabelle der offenen Lieferungen (1) akzeptiert werden.</p>
+</div>
+<div class="paragraph">
+<p>Hierfür klicken neben der zu akzeptierenden Lieferung auf das Häkchen (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_accept1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ein Fenster öffnet sich, in dem Sie dies nochmal mit "Akzeptieren" bestätigen müssen (3).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_accept2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Die Lieferung wird nun zu den eingegangenen Lieferungen (1) verschoben und erhält den Status akzeptiert (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_accept3.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Offene Lieferungen können ebenfalls in den Lieferdetails akzeptiert (1) und abgelehnt (2) werden.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_detail_accept_reject.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferungen_löschen">Lieferungen löschen</h4>
+<div class="paragraph">
+<p>Lieferung können nur direkt nach dem Erstellen (mit Status erstellt) oder wenn der Empfänger diese abgelehnt hat gelöscht werden.</p>
+</div>
+<div class="paragraph">
+<p>Bei Lieferung, die noch gelöscht werden können erscheint ein Abfalleimer (1).</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie auf diesen um die Lieferung zu löschen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_delete1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ein Fenster öffnet sich, bestätigen sie dort definitiv die Löschung (2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_delete2.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Während 30 Minuten kann die Löschung von Lieferungen mit dem Status abgelehnt rückgängig gemacht werden.</p>
+</div>
+<div class="paragraph">
+<p>Bleiben Sie hierfür die gelöschten Lieferungen mit dem Häkchen  "Gelöschte Elemente anzeigen" ein (3).</p>
+</div>
+<div class="paragraph">
+<p>Lieferungen mit dem Status "Gelöscht" werden nun ebenfalls angezeigt (4).</p>
+</div>
+<div class="paragraph">
+<p>Lieferungen, die wiederhergestellt werden können, haben einen zusätzlichen Knopf um diese wiederherzustellen (5).</p>
+</div>
+<div class="paragraph">
+<p>Solange die 30 Minuten Frist nicht abgelaufen ist können Sie die Lieferung wiederholt löschen und anschliessend wieder herstellen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_delete3.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Ebenfalls können Sie Lieferungen in den Lieferdetails löschen(1) und wiederherstellen(2).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_detail_delete.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_detail_restore.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferungen_exportieren">Lieferungen exportieren</h4>
+<div class="paragraph">
+<p>Sie können die Lieferungen Ihres Vorrats als Excel-Datei exportieren, klicken Sie hierfür auf der Lieferübersicht auf "Liste exportieren" (1).</p>
+</div>
+<div class="paragraph">
+<p>Dies lädt eine Excel-Datei herunter, welche alle Ihre Lieferungen beinhaltet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_export.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lieferungen_importieren">Lieferungen importieren</h4>
+<div class="paragraph">
+<p>Statt die Lieferungen über die Benutzeroberfläche zu erstellen können Sie diese mithilfe einer Excel-Datei importieren.</p>
+</div>
+<div class="paragraph">
+<p>Klicken Sie auf der Lieferübersicht auf "Liste importieren" (1).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_import.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Das Fenster für den Dateiimport öffnet sich.</p>
+</div>
+<div class="paragraph">
+<p>Hier können Sie sich eine Excel-Vorlage herunterladen, welche die Spalten beinhaltet, welche Sie für den Import benötigen.</p>
+</div>
+<div class="paragraph">
+<p>Haben Sie eine Datei für den Import vorbereitet, können Sie diese in den markierten Bereich (3) ziehen oder über einen Klick in den Bereich eine Datei von Ihrem Computer auswählen.</p>
+</div>
+<div class="paragraph">
+<p>Hat dies geklappt, wird der Dateiname angezeigt (4).</p>
+</div>
+<div class="paragraph">
+<p>Mit einem Klick auf "Importieren" importieren Sie die Lieferungen.(5)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/delivery_import1.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="ℹ️"></i>
+</td>
+<td class="content">
+Stellen Sie sicher, dass Sie für alle Vorräte, die Sie als Absender verwendet haben, die entsprechenden Rechte haben, um für diese Lieferungen zu erstellen.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Folgende Spalten sind in der Vorlage enthalten:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Beschreibung</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liefer-Nr. Kassensystem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: Verwenden Sie dieses Feld, um die Liefer-Nr. aus Ihrem System einzutragen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name Kassensystem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: Verwenden Sie dieses Feld, um den Namen Ihres Kassensystems einzugeben</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Lieferdatum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier das Lieferdatum ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kommentar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: Geben Sie hier einen Kommentar zur Lieferung ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Produkt-ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie die Produkt-Nummer aus dem Produktkatalog ein, welches Sie liefern möchten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Menge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier die gesendete Menge ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Einheit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier die passende Einheit für das Produkt ein, erlaubt sind KG, M3 und PC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*ID Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier die Agate, BUR oder digiFLUX Vorrats Nummer (AGATE, BUR, DIGIFLUX) für den Abgeber Vorrat ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Typ Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier an, um welche Nummer es sich in der vorherigen Spalte handelt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Privatadressen benötigen, für die Eingabe des Vornamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Privatadressen benötigen, für die Eingabe des Nachnamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firmenname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Firmenadressen benötigen, für die Eingabe des Firmennamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strasse Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Strasse</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Hausnummer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Postleitzahl</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Stadt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie hier das zweistellige Kürzel für das Land des Abgebers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kanton Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie hier zweistellige Kantonskürzel ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie die Telefonnummer des Abgebers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Mail Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie die E-Mail des Abgebers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*ID Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier die Agate, BUR oder digiFLUX Vorrats Nummer (AGATE, BUR, DIGIFLUX) für den Empfänger Vorrat ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Typ Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Pflicht: Geben Sie hier an, um welche Nummer es sich in der vorherigen Spalte handelt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Privatadressen benötigen, für die Eingabe des Vornamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Privatadressen benötigen, für die Eingabe des Nachnamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firmenname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Firmenadressen benötigen, für die Eingabe des Firmennamens</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strasse Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Strasse</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Hausnummer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Postleitzahl</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Verwenden Sie dies für Spezialfälle, welche Adressen benötigen, für die Stadt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie hier das zweistellige Kürzel für das Land des Empfängers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kanton Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie hier zweistellige Kantonskürzel ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie die Telefonnummer des Empfängers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Mail Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht für Spezialfälle: Geben Sie die E-Mail des Empfängers ein</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional: Sie können eine Backup-Adresse verwenden. Diese wird genutzt, um die Lieferung einer Person zuzuordnen, wenn der Empfänger nicht gefunden werden kann. Wenn Sie diese Adresse hinterlegen möchten, geben Sie "TRUE" ein. Wenn nicht, dann "FALSE". Bei "TRUE" müssen alle darauffolgenden Spalten (ausser Telefonnummer) ausgefüllt werden.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Nachname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie den Nachnamen der Backup-Person ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Vorname</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie den Vornamen der Backup-Person ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Geburtsdatum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie das Geburtsdatum der Backup-Person ein. Dieses Datum sollte im Format "TT.MM.JJJJ" oder einem ähnlichen Format vorliegen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup E-Mail</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie die E-Mail-Adresse der Backup-Person ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Postleitzahl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie die Postleitzahl der Backup-Adresse ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Ort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie den Ort (Stadt) der Backup-Adresse ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Kanton</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pflicht, wenn Backup = TRUE: Geben Sie das zweistellige Kantonskürzel der Backup-Adresse ein.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Telefon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional, wenn Backup = TRUE: Geben Sie die Telefonnummer der Backup-Person ein. Diese Angabe ist optional.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="_beispiel_lieferung_an_unternehmen_erstellen_mit_minimalen_daten">Beispiel - Lieferung an Unternehmen erstellen mit minimalen Daten</h5>
+<div class="paragraph">
+<p>Unten aufgeführt ist ein Bespiel, welches die minimalen Daten beinhalten, welche für eine Lieferung von Unternehmen an Unternehmen benötigt werden.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>Name</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Bespiel</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Liefer-Nr. Kassensystem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">121</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name Kassensystem</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KASSE XYZ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Lieferdatum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30.05.2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kommentar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wie besprochen</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Produkt-ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12345</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Menge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Einheit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*ID Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">47110815</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Typ Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BUR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firmenname Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strasse Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kanton Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Mail Abgeber Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*ID Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">102127528</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*Typ Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BUR</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vorname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nachname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Firmenname Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Strasse Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hausnummer Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Postleitzahl Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stadt Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Land Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kanton Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Telefonnummer Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Mail Empfänger Vorrat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FALSE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Nachname</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Vorname</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Geburtsdatum</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup E-Mail</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Postleitzahl</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Ort</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Kanton</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup Telefon</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_betriebsmittel">Betriebsmittel</h3>
+<div class="paragraph">
+<p>Die Betriebsmittelübersicht fasst den Verlauf Ihrer Transaktionen pro Produkt zusammen.
+Alle Lieferungen und Anwendung werden hier pro Produkt summiert, so wie der aktuelle Lagerbestand angezeigt.</p>
+</div>
+<div class="paragraph">
+<p>Der letzte Stofffluss sagt, aus, wann das Produkt zuletzt für eine Transaktion verwendet wurde.</p>
+</div>
+<div class="paragraph">
+<p>Zufluss und Wegfluss beinhalten eingehende und ausgehende Lieferungen.</p>
+</div>
+<div class="paragraph">
+<p>Anwendungen beinhaltet Anwendungen auf Saatgut und Feldern.</p>
+</div>
+<div class="paragraph">
+<p>Wie bei allen  anderen Übersichten können sie die Daten exportieren (1), dies exportiert die Übersicht als Excel-Datei</p>
+</div>
+<div class="paragraph">
+<p>Folgende Filter um zu suchen sind ebenfalls vorhanden:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Produkt suchen - Suche nach Produktnamen (2)</p>
+</li>
+<li>
+<p>Datums suche - Ermöglicht die Summe der Lieferungen und Anwendungen sowie den Lagerbestand zu einem bestimmten Zeitraum zu betrachten (3)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Um die Suche zu starten, klicken Sie auf "Suchen" (5), falls Sie Ihre Eingaben zurücksetzen möchten, klicken Sie auf "Zurücksetzen" (4).</p>
+</div>
+<div class="paragraph">
+<p>Für jedes Produkt können von hieraus  Sie eine Detailansicht aufrufen (6), welche alle Transaktionen zeigt.</p>
+</div>
+<div class="paragraph">
+<p>Der Knopf am rechten Rand der Zeile öffnet ein Menü, von dem aus neue Transaktionen erstellt werden können (7).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/ressources_overview.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="paragraph">
+<p>Sie können Anwendungen(8) und Lieferungen (9) für ein Produkt direkt von hier aus erfassen, dies startet den entsprechenden Prozess.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/ressources_overview_deliver_apply.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_betriebsmitteldetails">Betriebsmitteldetails</h4>
+<div class="paragraph">
+<p>Um die Details eines Produkts einsehen zu können, klicken Sie auf das i neben dem entsprechenden Produkt.
+Sie gelangen zu dieser Seite, welche die Transaktionen für das Produkt einzeln aufführt.</p>
+</div>
+<div class="paragraph">
+<p>Von hier aus können Sie auch die Details der Transaktionen aufrufen (1), das öffnet die Lieferdetails für die gezeigte Transaktion.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./DigiFLUX-Benutzerhandbuch_files/ressources_overview_details.png" alt="Alt-Text" width="1300" height="1100">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2024-08-20 10:33:43 UTC
+</div>
+</div>
+
+</body></html>
